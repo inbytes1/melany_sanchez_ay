@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&family=Caveat&family=Kalam&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.countdown {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 30px;
+    height: 2rem;
+    font-weight: lighter;
+    font-family: 'Satisfy', cursive;
+}
+
+.animate__animated.animate__backInUp {
+    animation-duration: 5s;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 0.6s;
+}
+
+#letraE, #letraL, #letraI, #letraS, #letraA, #letraAND, #letraP, #letrae, #letraD, #letraR, #letraO, #letraY, #letraEE, #letraZ {
+    animation: entradaGeneral 2s;
+    display: inline-block;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letraL {
+    animation-delay: 400ms;
+    animation-duration: 2s;
+}
+
+#letraI {
+    animation-delay: 200ms;
+}
+
+#letraS {
+    animation-delay: 300ms;
+}
+
+#letraAND {
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+}
+
+#letraP {
+    animation-delay: 500ms;
+}
+
+#letrae {
+    animation-delay: 100ms;
+}
+
+#letraD {
+    animation-delay: 470ms;
+}
+
+#letraR {
+    animation-delay: 150ms;
+}
+
+#letraO {
+    animation-delay: 350ms;
+}
+
+#letraY {
+    animation-delay: 220ms;
+} 
+
+#letraEE {
+    animation-delay: 170ms;
+} 
+
+#letraZ {
+    animation-delay: 300ms;
+}
+
+@keyframes entradaGeneral {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.texto-inicial h1 {
+    font-size: 4rem !important;
+}
+
+.texto-inicial .nombre {
+    font-size: 3.5rem !important;
+}
+
+.portada {
+    height: 100vh;
+    background: url(img/foto1-xv.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Sevillana', cursive;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+}
+
+.intro {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Kalam', cursive;
+    background-color: #FFF6EE;
+}
+
+.intro .fieston {
+    position: absolute;
+    top: -40px;
+    left: -140vw;
+    width: 140vw;
+    rotate: 15deg;
+}
+
+.mancha {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    top: 12vh;
+}
+
+.mis-xv-anos {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 44vh;
+    font-size: 55px;
+}
+
+.intro h3 {
+    font-size: 30px !important;
+    margin-top: 17vh;
+}
+
+.intro h4 {
+    margin-top: 40vh;
+}
+
+.foto-2 {
+    position: absolute;
+    width: 33vw;
+    border: green solid 5px;
+    bottom: 20px;
+    right: -40vw;
+    rotate: 360deg;
+    opacity: 0.7;
+}
+
+.details {
+    background-color: #B19470;
+    font-family: 'Questrial', sans-serif;
+}
+
+.details .titulo-donde {
+    font-size: 55px;
+}
+
+.details h1 {
+    font-size: 45px;
+    font-family: 'Caveat', cursive;
+}
+
+.txt-ubi {
+    font-size: 25px;
+}
+
+.lado-txts {
+    background-color: black;
+    color: black;
+}
+
+.goodbye {
+    background-color: #739072;
+    padding: 15px;
+}
+
+.goodbye * {
+    font-family: 'Bad Script', cursive;
+}
+
+.goodbye h3 {
+    font-size: 45px;
+}
+
+.goodbye img {
+    width: 50vw;
+}
+
+.donde {
+    width: 100%;
+}
+
+.cuando {
+    width: 100%;
+    position: relative;
+}
+
+.waves {
+    width: 100%;
+    position: relative;
+}
+
+.waves .wave {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(img/wave.png);
+    background-size: 1000px 100px;
+}
+
+.waves .wave.first-wave {
+    animation: animateWaveOne 30s linear infinite;
+    z-index: 10;
+    bottom: 0;
+}
+
+@keyframes animateWaveOne {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.waves .wave.second-wave {
+    animation: animateWaveTwo 15s linear infinite;
+    z-index: 9;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+@keyframes animateWaveTwo {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+.waves .wave.third-wave {
+    animation: animateWaveOne 30s linear infinite;
+    z-index: 8;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+
+.waves .wave.fourth-wave {
+    animation: animateWaveTwo 5s linear infinite;
+    z-index: 7;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+.footer {
+    font-family: 'Josefin Sans', sans-serif;
+}
