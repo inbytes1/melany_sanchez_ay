@@ -30,8 +30,8 @@ gsap.registerPlugin(TextPlugin);
 gsap.to('.fieston', {
     scrollTrigger: {
         trigger: '.fieston',
-        start: 'top center',
-        end: 'bottom center',
+        start: 'top 40%',
+        end: 'bottom 40%',
         scrub: 2,
     },
     x: '130vw',
@@ -41,8 +41,8 @@ gsap.to('.fieston', {
 gsap.to('.foto-2', {
     scrollTrigger: {
         trigger: '.intro',
-        start: 'center center',
-        end: '+=10vh center',
+        start: 'center 45%',
+        end: '+=10vh 45%',
         scrub: 2,
     },
     x: '-47vw',
@@ -55,7 +55,7 @@ gsap.to('.txt-ubi', {
         start: 'top 60%',
         end: '+=20vh',
     },
-    text: 'Tanto la celebracion como la ceremonia religiosa se llevaran a cabo en el local de la familia que se encuentra en el pueblo de Dzonot Carretero, Municipio de Tizimin, Yucatán.',
+    text: 'La ceremonia religiosa asi como la celebracion se llevaran a cabo en el local de la familia que se encuentra en el pueblo de Dzonot Carretero, Municipio de Tizimin, Yucatán.',
     duration: 3,
     ease: 'none',
 })
@@ -63,8 +63,8 @@ gsap.to('.txt-ubi', {
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".caja-details-donde",
-        start: "top center",
-        end: "+=30px center",
+        start: "top 40%",
+        end: "+=30px 40%",
         scrub: 2,
     }
 })
@@ -81,8 +81,8 @@ tl.to('.txt-donde', {
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".caja-details-cuando",
-        start: "top center",
-        end: "+=30px center",
+        start: "top 40%",
+        end: "+=30px 40%",
         scrub: 2,
     }
 })
