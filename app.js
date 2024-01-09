@@ -63,8 +63,8 @@ gsap.to('.txt-ubi', {
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".caja-details-donde",
-        start: "top 40%",
-        end: "+=30px 40%",
+        start: "top center",
+        end: "+=30px center",
         scrub: 2,
     }
 })
@@ -81,8 +81,8 @@ tl.to('.txt-donde', {
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".caja-details-cuando",
-        start: "top 40%",
-        end: "+=30px 40%",
+        start: "top center",
+        end: "+=30px center",
         scrub: 2,
     }
 })
